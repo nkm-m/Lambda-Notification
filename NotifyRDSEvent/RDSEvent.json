@@ -1,0 +1,31 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:ap-northeast-1:{{{accountId}}}:ExampleTopic",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "95df01b4-ee98-5cb9-9903-4c221d41eb5e",
+        "TopicArn": "arn:aws:sns:ap-northeast-1:{{{accountId}}}:ExampleTopic",
+        "Subject": "RDS Notification Message",
+        "Message": "{\"Event Source\":\"db-instance\",\"Event Time\":\"1970-01-01T00:00:00.000Z\",\"Identifier Link\":\"https://console.aws.amazon.com/rds/home?region=ap-northeast-1#dbinstance:id=example\",\"Source ID\":\"example\",\"Source ARN\":\"arn:aws:rds:ap-northeast-1:{{{accountId}}}:db:example\",\"Event ID\":\"http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html#RDS-EVENT-0000\",\"Event Message\":\"example event\"}",
+        "Timestamp": "1970-01-01T00:00:00.000Z",
+        "SignatureVersion": "1",
+        "Signature": "EXAMPLE",
+        "SigningCertUrl": "EXAMPLE",
+        "UnsubscribeUrl": "EXAMPLE",
+        "MessageAttributes": {
+          "Test": {
+            "Type": "String",
+            "Value": "TestString"
+          },
+          "TestBinary": {
+            "Type": "Binary",
+            "Value": "TestBinary"
+          }
+        }
+      }
+    }
+  ]
+}

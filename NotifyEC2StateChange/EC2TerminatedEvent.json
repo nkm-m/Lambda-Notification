@@ -1,0 +1,13 @@
+{
+  "version": "0",
+  "id": "cdb68b52-e460-9cff-9e1d-f239c5f9eb2f",
+  "detail-type": "EC2 Instance State-change Notification",
+  "source": "aws.ec2",
+  "account": "{{{accountId}}}",
+  "time": "1970-01-01T00:00:00.000Z",
+  "region": "ap-northeast-1",
+  "resources": [
+    "arn:aws:ec2:ap-northeast-1:{{{accountId}}}:instance/i-00000000000000000"
+  ],
+  "detail": { "instance-id": "i-00000000000000000", "state": "terminated" }
+}
